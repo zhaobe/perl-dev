@@ -9,3 +9,6 @@ Repository for perl scripting development
 - `-W` enables all warnings
 - `-w` enables helpful warnings
 - `-X` disables all warnings
+
+## Small things to remember
+- only using double quotes will interpolate variables like newline characters
