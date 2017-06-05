@@ -12,3 +12,9 @@ Repository for perl scripting development
 
 ## Small things to remember
 - only using double quotes will interpolate variables like newline characters
+
+## General Info about Perl
+- Scalars - simple variables with dollar sign in front of them, can be a number,
+a string, or a reference.
+- Arrays - ordered list of scalars, has an at sign in front.
+- Hashes - unordered sets of key value pairs, has a percent sign in front.
