@@ -26,3 +26,12 @@ print "array[-8] = $array[-8]\n";
 print "\n\Usequential number array examples:\n";
 my @tenToTwenty = (10..20);
 print "@tenToTwenty\n";
+
+print "\n\Uarray sizes:\n";
+my @array_size = (1,2,3,4,5);
+$array_size[10] = 6;
+
+my $size = @array_size;
+my $max_index = $#array_size;
+print "Size of array is: $size\n";
+print "Maximum array capacity is: $max_index\n";
