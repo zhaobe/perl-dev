@@ -23,3 +23,11 @@ print "\U-----transform array to string-----\n";
 # reusing the same array split from above
 my $join_string = join(' ', @string_arr);
 print "$join_string\n\n";
+
+print "\U-----sorting array-----\n";
+my @food_arr = qw(burger avocado steak fries pasta);
+print "food array: @food_arr\n";
+
+@food_arr = sort(@food_arr);
+print "sorted food array: @food_arr\n";
+
