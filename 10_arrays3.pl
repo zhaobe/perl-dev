@@ -24,10 +24,23 @@ print "\U-----transform array to string-----\n";
 my $join_string = join(' ', @string_arr);
 print "$join_string\n\n";
 
-print "\U-----sorting array-----\n";
+print "\U-----sorting array (always lowercase, then sort)-----\n";
 my @food_arr = qw(burger avocado steak fries pasta);
 print "food array: @food_arr\n";
 
 @food_arr = sort(@food_arr);
 print "sorted food array: @food_arr\n";
+
+print "\U-----merging arrays-----\n";
+my @odds = (1,3,4,5,7);
+my @evens = (2,4,6,8,10);
+print "odd array: @odds\n";
+print "even array: @evens\n";
+
+my @merge_arr = (@odds, @evens);
+print "merged array: @merge_arr\n\n";
+
+print "\U-----select element from list-----\n";
+my @arr_idx = (1,3,5,7)[3];
+print "the fourth index of our odd array is: @arr_idx\n\n";
 
