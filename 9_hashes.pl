@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 
 use strict;
+use warnings;
 
 print "\U-----create and access hash elements-----\n";
 my %hash = ('Alice', 10, 'Bob', 15, 'Cathy', 20);
@@ -38,6 +39,19 @@ my @keys = keys %hash;
 my $size = @keys;
 print "hash size for keys is: $size\n";
 
+$size = undef;
 my @values = values %hash;
-my $size = @values;
+$size = @values;
 print "hash size for values is: $size\n";
+
+print "\U-----add and remove elements in hash-----\n";
+$hash{'Dave'} = 25;
+@keys = keys %hash;
+$size = @keys;
+print "Added an element, hash size is: $size\n";
+
+delete $hash{'Dave'};
+@keys = keys %hash;
+$size = @keys;
+print "Deleted an element, hash size is: $size\n";
+
