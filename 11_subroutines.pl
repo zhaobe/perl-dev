@@ -20,3 +20,12 @@ sub PassingVar {
     print "The average of the numbers entered is: $avg\n";
 }
 PassingVar(5, 10, 15);
+
+sub PassingLists {
+    my @list = @_;
+    print "List that we defined is: @list\n";
+}
+my $single = 5;
+my @multiple = (15, 20, 25);
+
+PassingLists($single, @multiple);
