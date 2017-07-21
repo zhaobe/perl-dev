@@ -29,3 +29,15 @@ my $single = 5;
 my @multiple = (15, 20, 25);
 
 PassingLists($single, @multiple);
+
+sub PassingHashes {
+    my (%hash) = @_;
+    foreach my $key ( keys %hash ) {
+        my $value = $hash{$key};
+        print "$key : $value\n";
+    }
+}
+
+my %hash = ('name' => 'Alice', 'age' => 10);
+PassingHashes(%hash);
+
